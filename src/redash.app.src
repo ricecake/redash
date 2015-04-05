@@ -1,0 +1,12 @@
+{application, redash,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { redash_app, []}},
+  {env, []}
+ ]}.
