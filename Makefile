@@ -13,9 +13,13 @@ package: clean get-deps compile release bundle
 get-deps:
 	@$(REBAR) get-deps
 
-compile:
+compile: compile-erl compile-js
+
+compile-erl:
 	@$(REBAR) compile
 
+compile-js:
+	@$(JSX) priv/js/src priv/js/build
 clean:
 	@$(REBAR) clean
 
