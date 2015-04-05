@@ -1,4 +1,5 @@
 REBAR=		./rebar
+JSX=            jsx
 DIALYZER=	dialyzer
 
 
