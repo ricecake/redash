@@ -19,8 +19,8 @@
 %% API Function Definitions
 %% ------------------------------------------------------------------
 
-start_link() ->
-    gen_server:start_link({local, ?SERVER}, ?MODULE, [], []).
+start_link(Args) ->
+    gen_server:start_link(?MODULE, Args, []).
 
 %% ------------------------------------------------------------------
 %% gen_server Function Definitions
